@@ -1,0 +1,3527 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>onji – Weby na míru za 14 dní</title>
+    <meta
+      name="description"
+      content="Profesionální web na míru za 14 dní. Interaktivní návrh zdarma. Jasná cena od 9 900 Kč. Online agentura — žádné šablony."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="onji – Weby na míru za 14 dní" />
+    <meta
+      property="og:description"
+      content="Profesionální web na míru za 14 dní. Interaktivní návrh zdarma. Od 9 900 Kč."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://onji.cz/" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:image" content="https://onji.cz/assets/og.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="onji – Weby na míru za 14 dní" />
+    <meta
+      name="twitter:description"
+      content="Profesionální web na míru za 14 dní. Interaktivní návrh zdarma. Od 9 900 Kč."
+    />
+    <meta name="twitter:image" content="https://onji.cz/assets/og-image.jpg" />
+    <link rel="canonical" href="https://onji.cz/" />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Work+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "onji",
+        "url": "https://info.cz/",
+        "email": "info@onji.cz",
+        "telephone": "+420792336804",
+        "priceRange": "od 9 900 Kč",
+        "areaServed": "CZ",
+        "description": "Online digitální agentura. Weby na míru za 14 dní, interaktivní návrh zdarma."
+      }
+    </script>
+
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --bg-1: #111111;
+        --bg-2: #1a1a1a;
+        --bg-3: #222222;
+        --text: #e8e5df;
+        --muted: #a9a59c;
+        --dim: #746f67;
+        --y: #f5e642;
+        --y-dim: rgba(245, 230, 66, 0.1);
+        --border: rgba(255, 255, 255, 0.08);
+        --border2: rgba(255, 255, 255, 0.14);
+
+        --fh: 'Montserrat', sans-serif;
+        --fb: 'Work Sans', sans-serif;
+        --fm: 'DM Mono', monospace;
+
+        --ease: cubic-bezier(0.16, 1, 0.3, 1);
+        --r-sm: 6px;
+        --r-md: 10px;
+        --r-lg: 16px;
+        --mw: 1200px;
+        --px: clamp(20px, 5vw, 64px);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: var(--fb);
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 1.65;
+        color: var(--text);
+        background: var(--bg);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+      button {
+        font: inherit;
+        color: inherit;
+      }
+
+      section[id] {
+        scroll-margin-top: 76px;
+      }
+
+      h1 {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: clamp(46px, 6vw, 84px);
+        line-height: 1.06;
+        letter-spacing: -1.5px;
+        color: var(--text);
+      }
+      h2 {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: clamp(30px, 4vw, 52px);
+        line-height: 1.12;
+        letter-spacing: -0.5px;
+        color: var(--text);
+      }
+      h3 {
+        font-family: var(--fh);
+        font-weight: 600;
+        font-size: clamp(15px, 1.6vw, 18px);
+        line-height: 1.4;
+        color: var(--text);
+      }
+      p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.75;
+        color: var(--muted);
+      }
+
+      .y {
+        color: var(--y);
+      }
+      .wrap {
+        max-width: var(--mw);
+        margin: 0 auto;
+        padding: 0 var(--px);
+      }
+      .sec {
+        padding: 96px 0;
+      }
+
+      .lbl {
+        font-family: var(--fm);
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+        display: block;
+        margin-bottom: 18px;
+      }
+
+      /* Focus visibility — všechny interaktivní prvky */
+      :focus-visible {
+        outline: 2px solid var(--y);
+        outline-offset: 2px;
+        border-radius: 4px;
+      }
+
+      /* Reveal */
+      [data-r] {
+        opacity: 0;
+        transform: translateY(22px);
+        transition:
+          opacity 0.7s var(--ease),
+          transform 0.7s var(--ease);
+      }
+      [data-r].on {
+        opacity: 1;
+        transform: none;
+      }
+      [data-d='1'] {
+        transition-delay: 0.08s;
+      }
+      [data-d='2'] {
+        transition-delay: 0.16s;
+      }
+      [data-d='3'] {
+        transition-delay: 0.24s;
+      }
+      [data-d='4'] {
+        transition-delay: 0.32s;
+      }
+      [data-d='5'] {
+        transition-delay: 0.4s;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--fb);
+        font-weight: 600;
+        font-size: 14px;
+        padding: 13px 26px;
+        border-radius: var(--r-sm);
+        border: 1px solid transparent;
+        transition:
+          background 0.22s var(--ease),
+          border-color 0.22s var(--ease),
+          color 0.22s var(--ease),
+          transform 0.22s var(--ease),
+          box-shadow 0.22s var(--ease);
+        white-space: nowrap;
+        cursor: pointer;
+        letter-spacing: 0.01em;
+      }
+      .btn:active {
+        transform: translateY(0) scale(0.98);
+      }
+      .btn-y {
+        background: var(--y);
+        color: #0a0a0a;
+        border-color: var(--y);
+      }
+      .btn-y:hover {
+        background: #fff;
+        border-color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 32px rgba(245, 230, 66, 0.22);
+      }
+      .btn-gh {
+        background: transparent;
+        color: var(--text);
+        border-color: var(--border2);
+      }
+      .btn-gh:hover {
+        background: var(--border);
+        transform: translateY(-2px);
+      }
+      .btn-out {
+        background: transparent;
+        color: var(--y);
+        border-color: rgba(245, 230, 66, 0.35);
+      }
+      .btn-out:hover {
+        background: var(--y);
+        color: var(--bg);
+        transform: translateY(-2px);
+      }
+
+      /* ─── NAV ─── */
+      #nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        border-bottom: 1px solid transparent;
+        transition:
+          background 0.35s,
+          border-color 0.35s;
+      }
+      #nav.on {
+        background: rgba(10, 10, 10, 0.94);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-bottom-color: var(--border);
+      }
+      .nav-i {
+        max-width: var(--mw);
+        margin: 0 auto;
+        padding: 0 var(--px);
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: -0.03em;
+        color: var(--text);
+      }
+      .logo span {
+        color: var(--y);
+      }
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+      .nav-links a {
+        font-size: 13px;
+        color: var(--muted);
+        padding: 6px 12px;
+        border-radius: 5px;
+        transition:
+          color 0.18s,
+          background 0.18s;
+      }
+      .nav-links a:hover {
+        color: var(--text);
+        background: var(--border);
+      }
+      .nav-cta {
+        font-family: var(--fb);
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--y);
+        border: 1px solid rgba(245, 230, 66, 0.3);
+        padding: 7px 16px;
+        border-radius: 5px;
+        margin-left: 8px;
+        transition:
+          background 0.18s,
+          color 0.18s;
+      }
+      .nav-cta:hover {
+        background: var(--y);
+        color: var(--bg);
+      }
+      .nav-burger {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+      }
+      .nav-burger svg {
+        width: 22px;
+        height: 22px;
+        stroke: var(--text);
+        stroke-width: 2;
+        fill: none;
+        stroke-linecap: round;
+      }
+
+      /* Mobile menu */
+      #mmenu {
+        position: fixed;
+        inset: 0;
+        z-index: 1100;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        background: rgba(10, 10, 10, 0.97);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+      }
+      #mmenu.open {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .mm-close {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        font-size: 26px;
+        color: var(--muted);
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 8px;
+      }
+      .mm-close:hover {
+        color: var(--text);
+      }
+      #mmenu a {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: 34px;
+        color: var(--text);
+        padding: 10px 48px;
+        transition: color 0.18s;
+      }
+      #mmenu a:hover {
+        color: var(--y);
+      }
+
+      /* ─── HERO ─── */
+      #hero {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-top: 64px;
+        padding-bottom: 0;
+        position: relative;
+        overflow: hidden;
+        background: var(--bg);
+      }
+
+      .hero-glow-a {
+        position: absolute;
+        bottom: -15%;
+        left: -8%;
+        width: 680px;
+        height: 680px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(245, 230, 66, 0.038) 0%, transparent 65%);
+        pointer-events: none;
+        animation: glowDrift 9s ease-in-out infinite;
+      }
+      .hero-glow-b {
+        position: absolute;
+        top: 10%;
+        right: -10%;
+        width: 420px;
+        height: 420px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(245, 230, 66, 0.018) 0%, transparent 65%);
+        pointer-events: none;
+        animation: glowDrift 12s ease-in-out infinite reverse;
+      }
+      @keyframes glowDrift {
+        0%,
+        100% {
+          transform: translate(0, 0) scale(1);
+          opacity: 0.7;
+        }
+        33% {
+          transform: translate(3%, -4%) scale(1.07);
+          opacity: 1;
+        }
+        66% {
+          transform: translate(-3%, 3%) scale(0.95);
+          opacity: 0.5;
+        }
+      }
+
+      /* Plovoucí žluté tečky — canvas particles */
+      #hero-canvas {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+      }
+      /* Statická náhrada particles při prefers-reduced-motion */
+      .hero-dot-static {
+        display: none;
+        position: absolute;
+        border-radius: 50%;
+        background: var(--y);
+        pointer-events: none;
+        z-index: 1;
+        box-shadow: 0 0 10px 2px rgba(245, 230, 66, 0.45);
+      }
+
+      .hero-c {
+        position: relative;
+        z-index: 2;
+        max-width: var(--mw);
+        margin: 0 auto;
+        padding: 0 var(--px) 64px;
+        width: 100%;
+      }
+      .hero-tag {
+        font-family: var(--fm);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 18px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        animation: fu 0.9s var(--ease) both;
+      }
+      .hero-tag::before {
+        content: '';
+        width: 28px;
+        height: 1px;
+        background: var(--y);
+        flex-shrink: 0;
+      }
+
+      /* Badge — návrhy zdarma */
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        font-family: var(--fm);
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        color: var(--y);
+        background: var(--y-dim);
+        border: 1px solid rgba(245, 230, 66, 0.28);
+        border-radius: 100px;
+        padding: 7px 16px;
+        margin-bottom: 26px;
+        animation: fu 0.9s var(--ease) 0.05s both;
+      }
+      .hero-badge-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--y);
+        flex-shrink: 0;
+        animation: pulse 2.2s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          box-shadow: 0 0 0 0 rgba(245, 230, 66, 0.45);
+        }
+        50% {
+          box-shadow: 0 0 0 6px rgba(245, 230, 66, 0);
+        }
+      }
+
+      h1.hero-h {
+        margin-bottom: 20px;
+        animation: fu 0.9s var(--ease) 0.1s both;
+      }
+      .hero-sub {
+        font-size: clamp(15px, 1.5vw, 17px);
+        color: var(--muted);
+        font-weight: 300;
+        margin-bottom: 36px;
+        max-width: 420px;
+        animation: fu 0.9s var(--ease) 0.2s both;
+      }
+      .hero-btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        animation: fu 0.9s var(--ease) 0.3s both;
+      }
+
+      @keyframes fu {
+        from {
+          opacity: 0;
+          transform: translateY(28px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+
+      /* Ticker */
+      .ticker {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        border-top: 1px solid var(--border);
+        background: var(--bg-1);
+        padding: 12px 0;
+      }
+      .t-track {
+        display: flex;
+        width: max-content;
+        animation: tick 30s linear infinite;
+      }
+      .t-track:hover {
+        animation-play-state: paused;
+      }
+      @keyframes tick {
+        to {
+          transform: translateX(-50%);
+        }
+      }
+      .t-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+        font-family: var(--fm);
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+      .td {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: var(--y);
+        flex-shrink: 0;
+      }
+      .t-hl {
+        color: var(--y);
+      }
+
+      /* ─── STATS ─── */
+      #stats {
+        padding: 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .stats-g {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background: var(--border);
+        gap: 1px;
+      }
+      .stat {
+        background: var(--bg);
+        padding: 52px var(--px);
+        text-align: center;
+      }
+      .stat-n {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: clamp(42px, 6vw, 70px);
+        line-height: 1;
+        color: var(--text);
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        gap: 7px;
+      }
+      .stat-sfx {
+        font-family: var(--fm);
+        font-size: clamp(14px, 1.8vw, 20px);
+        color: var(--y);
+      }
+      .stat-lbl {
+        margin-top: 10px;
+        font-size: 12px;
+        color: var(--muted);
+        font-family: var(--fm);
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+
+      /* ─── SECTION HEADER ─── */
+      .sec-hd {
+        margin-bottom: 56px;
+      }
+      .sec-hd h2 {
+        margin-bottom: 10px;
+      }
+      .sec-hd p {
+        font-size: 16px;
+        max-width: 500px;
+      }
+
+      /* ─── USP ─── */
+      #usp {
+        background: var(--bg-1);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      }
+      .usp-g {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: var(--r-md);
+        overflow: hidden;
+      }
+      .usp-c {
+        background: var(--bg-1);
+        padding: 36px 30px;
+        transition: background 0.25s;
+      }
+      .usp-c:hover {
+        background: var(--bg-2);
+      }
+      .usp-ico {
+        width: 40px;
+        height: 40px;
+        border-radius: var(--r-sm);
+        background: var(--y-dim);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        transition: background 0.25s;
+      }
+      .usp-c:hover .usp-ico {
+        background: var(--y);
+      }
+      .usp-ico svg {
+        width: 20px;
+        height: 20px;
+        stroke: var(--y);
+        stroke-width: 2;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        transition: stroke 0.25s;
+      }
+      .usp-c:hover .usp-ico svg {
+        stroke: var(--bg);
+      }
+      .usp-c h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .usp-c p {
+        font-size: 14px;
+        line-height: 1.7;
+      }
+
+      /* ─── PROBLEM ─── */
+      .two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: start;
+      }
+      .stk {
+        position: sticky;
+        top: 96px;
+      }
+      .sec-note {
+        margin-top: 16px;
+        font-size: 15px;
+        max-width: 300px;
+      }
+
+      .acc-list {
+        display: flex;
+        flex-direction: column;
+      }
+      .acc {
+        border-bottom: 1px solid var(--border);
+      }
+      .acc:first-child {
+        border-top: 1px solid var(--border);
+      }
+      .acc-h {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 22px 0;
+        cursor: pointer;
+        width: 100%;
+        background: none;
+        border: none;
+        text-align: left;
+      }
+      .acc-n {
+        font-family: var(--fm);
+        font-size: 10px;
+        color: var(--y);
+        width: 22px;
+        flex-shrink: 0;
+        letter-spacing: 0.05em;
+      }
+      .acc-t {
+        font-family: var(--fh);
+        font-weight: 600;
+        font-size: clamp(14px, 1.5vw, 16px);
+        flex: 1;
+        color: var(--text);
+      }
+      .acc-ico {
+        width: 16px;
+        height: 16px;
+        color: var(--muted);
+        flex-shrink: 0;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        transition:
+          transform 0.3s var(--ease),
+          color 0.25s;
+      }
+      .acc.open .acc-ico {
+        transform: rotate(45deg);
+        color: var(--y);
+      }
+      .acc-b {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition:
+          max-height 0.4s var(--ease),
+          opacity 0.3s;
+      }
+      .acc.open .acc-b {
+        max-height: 180px;
+        opacity: 1;
+      }
+      .acc-bi {
+        padding: 0 0 20px 38px;
+        font-size: 14px;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      /* ─── PORTFOLIO — browser-frame mockupy ─── */
+      .port-hd {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 40px;
+      }
+      .port-g {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+      .port-item {
+        min-width: 0;
+      }
+
+      .bf {
+        display: block;
+        border: 1px solid var(--border);
+        border-radius: var(--r-md);
+        overflow: hidden;
+        background: var(--bg-2);
+        transition:
+          transform 0.4s var(--ease),
+          border-color 0.3s,
+          box-shadow 0.4s var(--ease);
+      }
+      .bf:hover,
+      .bf:focus-within {
+        transform: translateY(-6px);
+        border-color: var(--border2);
+        box-shadow: 0 28px 56px -28px rgba(0, 0, 0, 0.65);
+      }
+      .bf-bar {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 14px;
+        background: var(--bg-1);
+        border-bottom: 1px solid var(--border);
+      }
+      .bf-dots {
+        display: flex;
+        gap: 5px;
+        flex-shrink: 0;
+      }
+      .bf-dots span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--bg-3);
+      }
+      .bf-url {
+        flex: 1;
+        max-width: 280px;
+        margin: 0 auto;
+        font-family: var(--fm);
+        font-size: 11px;
+        color: var(--muted);
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        padding: 4px 14px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .bf-sp {
+        width: 26px;
+        flex-shrink: 0;
+      } /* optická protiváha teček */
+      .bf-shot {
+        position: relative;
+        aspect-ratio: 16/10;
+        overflow: hidden;
+        background: var(--bg-3);
+      }
+      .bf-shot img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        transition: filter 0.5s var(--ease);
+      }
+      .bf:hover .bf-shot img,
+      .bf:focus-within .bf-shot img {
+        filter: grayscale(1) brightness(0.25);
+      }
+
+      .bf-ov {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 10px;
+        padding: clamp(18px, 3vw, 28px);
+        opacity: 0;
+        transform: translateY(8px);
+        transition:
+          opacity 0.5s var(--ease),
+          transform 0.5s var(--ease);
+      }
+      .bf:hover .bf-ov,
+      .bf:focus-within .bf-ov {
+        opacity: 1;
+        transform: none;
+      }
+      .bf-tag {
+        font-family: var(--fm);
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .bf-name {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: clamp(17px, 2vw, 22px);
+        color: var(--text);
+      }
+      .bf-desc {
+        font-size: 13px;
+        color: var(--text);
+        line-height: 1.65;
+        max-width: 420px;
+        opacity: 0.85;
+      }
+      .bf-link {
+        font-family: var(--fm);
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--y);
+        letter-spacing: 0.04em;
+        margin-top: 4px;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.2s;
+      }
+      .bf-link:hover {
+        border-bottom-color: var(--y);
+      }
+
+      /* Popisek pod kartou — touch zařízení (hover nesmí být jediná cesta k obsahu) */
+      .port-caption {
+        display: none;
+        padding: 14px 4px 0;
+      }
+      .port-caption .bf-tag {
+        display: block;
+        margin-bottom: 6px;
+      }
+      .port-caption p {
+        font-size: 13px;
+        line-height: 1.65;
+        margin: 4px 0 8px;
+      }
+      @media (hover: none) {
+        .bf-ov {
+          display: none;
+        }
+        .port-caption {
+          display: block;
+        }
+        .bf:hover .bf-shot img {
+          filter: none;
+        }
+      }
+
+      /* CTA karta — prázdný browser-frame */
+      .bf-cta {
+        border-style: dashed;
+        border-color: var(--border2);
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+      }
+      .bf-cta .bf-bar {
+        background: transparent;
+        border-bottom-style: dashed;
+      }
+      .bf-cta-body {
+        flex: 1;
+        aspect-ratio: 16/10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 24px;
+        text-align: center;
+      }
+      .bf-cta-body .bf-name {
+        font-size: clamp(16px, 1.8vw, 20px);
+      }
+      .bf-cta-body .bf-tag {
+        color: var(--dim);
+      }
+      .bf-cta:hover,
+      .bf-cta:focus-within {
+        border-color: rgba(245, 230, 66, 0.4);
+      }
+      .bf-cta:hover .bf-cta-arr {
+        background: var(--y);
+        color: var(--bg);
+      }
+      .bf-cta-arr {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid rgba(245, 230, 66, 0.35);
+        color: var(--y);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6px;
+        font-size: 15px;
+        transition:
+          background 0.25s,
+          color 0.25s;
+      }
+
+      /* Vertikální rytmus na desktopu */
+      @media (min-width: 901px) {
+        .port-item:nth-child(even) {
+          margin-top: 40px;
+        }
+        .port-g {
+          padding-bottom: 40px;
+        }
+      }
+
+      /* ─── PROCESS ─── */
+      .proc-layout {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 88px;
+        align-items: start;
+      }
+      .proc-left {
+        position: sticky;
+        top: 96px;
+      }
+      .proc-left h2 {
+        margin-bottom: 14px;
+      }
+      .proc-left > p {
+        font-size: 15px;
+        margin-bottom: 36px;
+        max-width: 270px;
+      }
+      .proc-badge {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 10px;
+        padding: 16px 22px;
+        border: 1px solid rgba(245, 230, 66, 0.22);
+        border-radius: var(--r-sm);
+        background: rgba(245, 230, 66, 0.04);
+      }
+      .proc-badge-n {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: 38px;
+        color: var(--y);
+        line-height: 1;
+      }
+      .proc-badge-lbl {
+        font-family: var(--fm);
+        font-size: 10px;
+        color: var(--muted);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .proc-steps {
+        display: flex;
+        flex-direction: column;
+      }
+      .proc-step {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        gap: 8px;
+        align-items: start;
+        padding: 28px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .proc-step:first-child {
+        padding-top: 4px;
+      }
+      .proc-step:last-child {
+        border-bottom: none;
+      }
+      .proc-num {
+        font-family: var(--fm);
+        font-weight: 500;
+        font-size: 54px;
+        line-height: 1;
+        color: var(--dim);
+        transition: color 0.5s var(--ease);
+      }
+      .proc-step.lit .proc-num {
+        color: var(--y);
+      }
+      .proc-cnt {
+        padding-top: 6px;
+      }
+      .proc-cnt h3 {
+        font-size: 17px;
+        margin-bottom: 6px;
+      }
+      .proc-cnt p {
+        font-size: 14px;
+      }
+
+      /* ─── PRICING ─── */
+      .price-g {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 48px;
+        align-items: stretch;
+      }
+      .price-c {
+        border-radius: var(--r-lg);
+        padding: 40px 32px;
+        border: 1px solid var(--border);
+        background: var(--bg-1);
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .price-c--main {
+        border-color: rgba(245, 230, 66, 0.3);
+        background: var(--bg-2);
+      }
+      .price-c--main::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--y), transparent);
+      }
+      @media (min-width: 901px) {
+        .price-c--main {
+          transform: translateY(-12px);
+          box-shadow: 0 28px 56px -32px rgba(0, 0, 0, 0.7);
+        }
+      }
+      .price-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        align-self: flex-start;
+        font-family: var(--fm);
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #0a0a0a;
+        background: var(--y);
+        padding: 4px 12px;
+        border-radius: 100px;
+        margin-bottom: 22px;
+      }
+      .price-badge--gh {
+        background: var(--y-dim);
+        color: var(--y);
+        border: 1px solid rgba(245, 230, 66, 0.25);
+      }
+      .price-sp {
+        height: 24px;
+        margin-bottom: 22px;
+      }
+      .price-name {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: clamp(18px, 2vw, 22px);
+        margin-bottom: 8px;
+        color: var(--text);
+      }
+      .price-desc {
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid var(--border);
+        line-height: 1.6;
+      }
+      .price-row {
+        display: flex;
+        align-items: flex-end;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin: 12px 0 4px;
+      }
+      .price-big {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: clamp(36px, 3.6vw, 48px);
+        line-height: 1;
+        color: var(--text);
+      }
+      .price-cur {
+        font-size: 15px;
+        color: var(--muted);
+        padding-bottom: 4px;
+      }
+      .price-was {
+        font-size: 12px;
+        color: var(--dim);
+        text-decoration: line-through;
+        margin-bottom: 24px;
+        font-family: var(--fm);
+        min-height: 18px;
+      }
+      .price-plus {
+        font-family: var(--fm);
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 24px;
+        min-height: 18px;
+      }
+      .price-feats {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 32px;
+        flex: 1;
+      }
+      .price-feat {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .price-chk {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--y-dim);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 9px;
+        font-weight: 700;
+        color: var(--y);
+      }
+      .price-c--main .price-chk {
+        background: var(--y);
+        color: var(--bg);
+      }
+      .price-c .btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .price-note {
+        margin-top: 36px;
+        text-align: center;
+        font-size: 15px;
+        color: var(--text);
+        font-weight: 400;
+      }
+      .price-note .y {
+        font-weight: 600;
+      }
+      .price-terms {
+        margin-top: 14px;
+        text-align: center;
+        font-family: var(--fm);
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.7;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* ─── RECENZE — carousel ─── */
+      .car {
+        position: relative;
+        margin-top: 48px;
+      }
+      .car-vp {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 6px 2px 10px;
+      }
+      .car-vp::-webkit-scrollbar {
+        display: none;
+      }
+      .rev-c {
+        flex: 0 0 100%;
+        min-width: 0;
+        scroll-snap-align: start;
+        background: var(--bg-1);
+        border: 1px solid var(--border);
+        border-radius: var(--r-lg);
+        padding: 28px;
+        transition:
+          border-color 0.3s,
+          transform 0.3s var(--ease);
+      }
+      .rev-c:hover {
+        border-color: var(--border2);
+        transform: translateY(-4px);
+      }
+      @media (min-width: 901px) {
+        .rev-c {
+          flex-basis: calc(45% - 10px);
+        }
+      }
+      .rev-stars {
+        display: flex;
+        gap: 3px;
+        margin-bottom: 16px;
+      }
+      .rev-stars svg {
+        width: 15px;
+        height: 15px;
+        fill: var(--y);
+      }
+      .rev-text {
+        font-size: 14px;
+        color: var(--text);
+        line-height: 1.75;
+        margin-bottom: 24px;
+        font-weight: 300;
+      }
+      .rev-author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .rev-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: var(--y-dim);
+        border: 1px solid rgba(245, 230, 66, 0.18);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--y);
+      }
+      .rev-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text);
+        font-family: var(--fh);
+      }
+      .rev-role {
+        font-size: 11px;
+        color: var(--muted);
+        margin-top: 2px;
+        font-family: var(--fm);
+      }
+
+      /* CTA karta — prázdné místo v recenzích */
+      .rev-cta {
+        border-style: dashed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-align: center;
+        min-height: 100%;
+      }
+      .rev-cta:hover {
+        border-color: rgba(245, 230, 66, 0.4);
+      }
+      .rev-cta .rev-name {
+        font-size: clamp(16px, 1.8vw, 20px);
+      }
+      .rev-cta .rev-role {
+        color: var(--dim);
+      }
+      .rev-cta:hover .bf-cta-arr {
+        background: var(--y);
+        color: var(--bg);
+      }
+
+      .car-ctrl {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 24px;
+      }
+      .car-arrows {
+        display: flex;
+        gap: 8px;
+      }
+      .car-btn {
+        width: 40px;
+        height: 40px;
+        border-radius: var(--r-sm);
+        background: transparent;
+        border: 1px solid var(--border2);
+        color: var(--text);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:
+          border-color 0.2s,
+          color 0.2s,
+          background 0.2s;
+      }
+      .car-btn:hover {
+        border-color: rgba(245, 230, 66, 0.5);
+        color: var(--y);
+      }
+      .car-btn:active {
+        background: var(--y-dim);
+      }
+      .car-btn svg {
+        width: 16px;
+        height: 16px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .car-dots {
+        display: flex;
+        gap: 8px;
+      }
+      .car-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--dim);
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        transition:
+          background 0.25s,
+          transform 0.25s;
+      }
+      .car-dot.on {
+        background: var(--y);
+        transform: scale(1.25);
+      }
+
+      /* ─── FAQ ─── */
+      .faq-list {
+        max-width: 740px;
+        margin: 48px auto 0;
+      }
+      .faq-item {
+        border-bottom: 1px solid var(--border);
+      }
+      .faq-q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        cursor: pointer;
+        gap: 16px;
+        width: 100%;
+        background: none;
+        border: none;
+        text-align: left;
+      }
+      .faq-q h3 {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--text);
+        margin: 0;
+      }
+      .faq-plus {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid var(--border2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        font-size: 14px;
+        color: var(--muted);
+        font-family: var(--fm);
+        transition:
+          background 0.3s var(--ease),
+          border-color 0.3s var(--ease),
+          color 0.3s var(--ease),
+          transform 0.3s var(--ease);
+      }
+      .faq-item.open .faq-plus {
+        background: var(--y);
+        border-color: var(--y);
+        color: var(--bg);
+        transform: rotate(45deg);
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition:
+          max-height 0.4s var(--ease),
+          opacity 0.3s;
+      }
+      .faq-item.open .faq-a {
+        max-height: 260px;
+        opacity: 1;
+      }
+      .faq-a-in {
+        padding: 0 0 20px;
+        font-size: 14px;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      /* ─── CONTACT ─── */
+      .contact-eyebrow {
+        font-family: var(--fm);
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        color: var(--y);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 14px;
+      }
+      .contact-eyebrow::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--y);
+        animation: pulse 2.2s ease-in-out infinite;
+      }
+      .contact-g {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 80px;
+        margin-top: 56px;
+      }
+      .f-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .f-g {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 14px;
+      }
+      .f-g label {
+        font-family: var(--fm);
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .f-g input,
+      .f-g textarea {
+        background: var(--bg);
+        border: 1px solid var(--border2);
+        border-radius: var(--r-sm);
+        padding: 11px 14px;
+        font-family: var(--fb);
+        font-size: 14px;
+        color: var(--text);
+        outline: none;
+        transition:
+          border-color 0.22s,
+          box-shadow 0.22s;
+        resize: vertical;
+      }
+      .f-g input::placeholder,
+      .f-g textarea::placeholder {
+        color: var(--dim);
+      }
+      .f-g input:focus,
+      .f-g textarea:focus {
+        border-color: rgba(245, 230, 66, 0.5);
+        box-shadow: 0 0 0 3px rgba(245, 230, 66, 0.08);
+      }
+      .f-g textarea {
+        min-height: 130px;
+      }
+      .req {
+        color: var(--y);
+      }
+      /* Honeypot — skryté pole proti spamu */
+      .f-hp {
+        position: absolute;
+        left: -9999px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+      .form-gdpr {
+        margin-top: 12px;
+        font-size: 12px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .form-ok,
+      .form-err {
+        display: none;
+        margin-top: 14px;
+        padding: 12px 16px;
+        border-radius: var(--r-sm);
+        font-size: 13px;
+        font-family: var(--fm);
+      }
+      .form-ok {
+        background: var(--y-dim);
+        border: 1px solid rgba(245, 230, 66, 0.2);
+        color: var(--y);
+      }
+      .form-err {
+        background: rgba(255, 90, 90, 0.08);
+        border: 1px solid rgba(255, 90, 90, 0.25);
+        color: #ff8a8a;
+      }
+      .form-ok.vis,
+      .form-err.vis {
+        display: block;
+      }
+      .cinfo {
+        position: sticky;
+        top: 96px;
+      }
+      .cinfo h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      .cinfo > p {
+        font-size: 14px;
+        margin-bottom: 36px;
+      }
+      .cinfo-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
+      .cinfo-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: var(--r-sm);
+        background: var(--y-dim);
+        border: 1px solid rgba(245, 230, 66, 0.14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .cinfo-icon svg {
+        width: 16px;
+        height: 16px;
+        stroke: var(--y);
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .cinfo-val {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text);
+      }
+      .cinfo-val a {
+        color: var(--y);
+      }
+      .cinfo-val a:hover {
+        text-decoration: underline;
+      }
+      .cinfo-reply {
+        font-family: var(--fm);
+        font-size: 11px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-top: 26px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .cinfo-reply::before {
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--y);
+      }
+
+      /* ─── FOOTER ─── */
+      #footer {
+        background: var(--bg);
+        border-top: 1px solid var(--border);
+        padding: 36px 0;
+      }
+      .foot-i {
+        max-width: var(--mw);
+        margin: 0 auto;
+        padding: 0 var(--px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .foot-logo {
+        font-family: var(--fh);
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: -0.02em;
+        color: var(--text);
+      }
+      .foot-logo span {
+        color: var(--y);
+      }
+      .foot-copy {
+        font-size: 12px;
+        color: var(--muted);
+        font-family: var(--fm);
+      }
+      .foot-links {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .foot-links a {
+        font-size: 12px;
+        color: var(--muted);
+        transition: color 0.18s;
+        font-family: var(--fm);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .foot-links a:hover {
+        color: var(--text);
+      }
+
+      /* ─── SCROLL TOP ─── */
+      #stbtn {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        width: 42px;
+        height: 42px;
+        border-radius: var(--r-sm);
+        background: var(--y);
+        color: var(--bg);
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(16px);
+        pointer-events: none;
+        transition:
+          opacity 0.3s,
+          transform 0.3s,
+          background 0.2s;
+        z-index: 500;
+      }
+      #stbtn.vis {
+        opacity: 1;
+        transform: none;
+        pointer-events: all;
+      }
+      #stbtn:hover {
+        background: #fff;
+      }
+      #stbtn svg {
+        width: 17px;
+        height: 17px;
+        stroke: var(--bg);
+        fill: none;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      /* ─── STICKY MOBILNÍ CTA ─── */
+      #mcta {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 800;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        background: rgba(17, 17, 17, 0.96);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-top: 1px solid var(--border2);
+        padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+        transform: translateY(100%);
+        transition: transform 0.4s var(--ease);
+      }
+      #mcta.vis {
+        transform: none;
+      }
+      .mcta-link {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-family: var(--fb);
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--bg);
+        background: var(--y);
+        border-radius: var(--r-sm);
+        padding: 11px 16px;
+      }
+      .mcta-link:active {
+        transform: scale(0.98);
+      }
+      .mcta-close {
+        background: none;
+        border: 1px solid var(--border2);
+        border-radius: var(--r-sm);
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+        color: var(--muted);
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (max-width: 768px) {
+        #mcta.vis {
+          display: flex;
+        }
+        #stbtn {
+          bottom: calc(78px + env(safe-area-inset-bottom));
+        }
+      }
+
+      /* ─── COOKIE LIŠTA ─── */
+      .cookie-bar {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        background: rgba(17, 17, 17, 0.97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-top: 1px solid var(--border2);
+        padding: 18px var(--px) calc(18px + env(safe-area-inset-bottom));
+        transform: translateY(100%);
+        transition: transform 0.4s var(--ease);
+      }
+      .cookie-bar.vis {
+        transform: none;
+      }
+      .cookie-txt {
+        flex: 1 1 100px;
+        max-width: 640px;
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+      .cookie-txt a {
+        color: var(--y);
+        text-decoration: underline;
+      }
+      .cookie-btns {
+        display: flex;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+      .cookie-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+      }
+      html.cookie-pending #mcta {
+        display: none !important;
+      }
+      html.cookie-vis #stbtn.vis {
+        bottom: calc(112px + env(safe-area-inset-bottom));
+      }
+      @media (max-width: 640px) {
+        .cookie-bar {
+          flex-direction: column;
+          align-items: stretch;
+          text-align: center;
+        }
+        .cookie-btns {
+          justify-content: center;
+        }
+      }
+
+      /* ─── RESPONSIVE ─── */
+      @media (max-width: 1024px) {
+        .two,
+        .proc-layout {
+          gap: 48px;
+        }
+        .contact-g {
+          gap: 48px;
+        }
+      }
+      @media (max-width: 900px) {
+        .nav-links,
+        .nav-cta {
+          display: none;
+        }
+        .nav-burger {
+          display: flex;
+        }
+        .stats-g {
+          grid-template-columns: 1fr;
+        }
+        .usp-g {
+          grid-template-columns: 1fr;
+        }
+        .two {
+          grid-template-columns: 1fr;
+        }
+        .stk,
+        .cinfo {
+          position: static;
+        }
+        .port-g {
+          grid-template-columns: 1fr;
+        }
+        .proc-layout {
+          grid-template-columns: 1fr;
+        }
+        .proc-left {
+          position: static;
+        }
+        .price-g {
+          grid-template-columns: 1fr;
+        }
+        .contact-g {
+          grid-template-columns: 1fr;
+        }
+        .foot-i {
+          flex-direction: column;
+          text-align: center;
+        }
+        .foot-links {
+          justify-content: center;
+        }
+      }
+      @media (max-width: 640px) {
+        .sec {
+          padding: 72px 0;
+        }
+        .hero-btns {
+          flex-direction: column;
+        }
+        .hero-btns .btn {
+          width: 100%;
+          justify-content: center;
+        }
+        .port-hd {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .f-row {
+          grid-template-columns: 1fr;
+        }
+        .price-c {
+          padding: 28px 22px;
+        }
+      }
+
+      /* ─── REDUCED MOTION ─── */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+        [data-r] {
+          opacity: 1;
+          transform: none;
+        }
+        .t-track {
+          animation: none !important;
+        }
+        .hero-glow-a,
+        .hero-glow-b {
+          animation: none !important;
+        }
+        #hero-canvas {
+          display: none;
+        }
+        .hero-dot-static {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <nav id="nav">
+      <div class="nav-i">
+        <a href="#" class="logo">on<span>ji</span></a>
+        <div class="nav-links">
+          <a href="#usp">Proč my</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#pricing">Ceník</a>
+          <a href="#reviews">Recenze</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+        <a href="#contact" class="nav-cta">Chci web →</a>
+        <button
+          class="nav-burger"
+          id="nav-burger"
+          aria-label="Otevřít menu"
+          aria-expanded="false"
+          aria-controls="mmenu"
+        >
+          <svg viewBox="0 0 24 24">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mmenu" role="dialog" aria-modal="true" aria-label="Navigace">
+      <button class="mm-close" id="mm-close" aria-label="Zavřít menu">✕</button>
+      <a href="#usp">Proč my</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#pricing">Ceník</a>
+      <a href="#reviews">Recenze</a>
+      <a href="#contact" style="color: var(--y)">Návrh zdarma →</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-glow-a"></div>
+      <div class="hero-glow-b"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <!-- Statické tečky — náhrada particles při prefers-reduced-motion -->
+      <div
+        class="hero-dot-static"
+        style="top: 22%; left: 12%; width: 4px; height: 4px; opacity: 0.5"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="hero-dot-static"
+        style="top: 38%; left: 74%; width: 3px; height: 3px; opacity: 0.35"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="hero-dot-static"
+        style="top: 64%; left: 48%; width: 5px; height: 5px; opacity: 0.45"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="hero-dot-static"
+        style="top: 15%; left: 58%; width: 3px; height: 3px; opacity: 0.3"
+        aria-hidden="true"
+      ></div>
+
+      <div class="hero-c">
+        <span class="hero-tag">Online digitální agentura</span>
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Momentálně děláme návrhy zdarma
+        </div>
+        <h1 class="hero-h">Váš web<br />do <span class="y">14 dní.</span></h1>
+        <p class="hero-sub">Žádné šablony. Žádné čekání.<br />Od 9 900 Kč.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-y">Konzultace zdarma →</a>
+          <a href="#portfolio" class="btn btn-gh">Naše práce</a>
+        </div>
+      </div>
+
+      <div class="ticker">
+        <div class="t-track">
+          <div class="t-item">
+            <span>Web na míru</span><span class="td"></span> <span>14 dní</span
+            ><span class="td"></span> <span>od 9 900 Kč</span><span class="td"></span>
+            <span class="t-hl">Návrh zdarma</span><span class="td"></span>
+            <span>100% responzivní</span><span class="td"></span> <span>SEO v ceně</span
+            ><span class="td"></span> <span>Hosting v ceně</span><span class="td"></span>
+            <span>Žádné šablony</span><span class="td"></span> <span>Více zákazníků</span
+            ><span class="td"></span>
+          </div>
+          <div class="t-item" aria-hidden="true">
+            <span>Web na míru</span><span class="td"></span> <span>14 dní</span
+            ><span class="td"></span> <span>od 9 900 Kč</span><span class="td"></span>
+            <span class="t-hl">Návrh zdarma</span><span class="td"></span>
+            <span>100% responzivní</span><span class="td"></span> <span>SEO v ceně</span
+            ><span class="td"></span> <span>Hosting v ceně</span><span class="td"></span>
+            <span>Žádné šablony</span><span class="td"></span> <span>Více zákazníků</span
+            ><span class="td"></span>
+          </div>
+          <div class="t-item" aria-hidden="true">
+            <span>Web na míru</span><span class="td"></span> <span>14 dní</span
+            ><span class="td"></span> <span>od 9 900 Kč</span><span class="td"></span>
+            <span class="t-hl">Návrh zdarma</span><span class="td"></span>
+            <span>100% responzivní</span><span class="td"></span> <span>SEO v ceně</span
+            ><span class="td"></span> <span>Hosting v ceně</span><span class="td"></span>
+            <span>Žádné šablony</span><span class="td"></span> <span>Více zákazníků</span
+            ><span class="td"></span>
+          </div>
+          <div class="t-item" aria-hidden="true">
+            <span>Web na míru</span><span class="td"></span> <span>14 dní</span
+            ><span class="td"></span> <span>od 9 900 Kč</span><span class="td"></span>
+            <span class="t-hl">Návrh zdarma</span><span class="td"></span>
+            <span>100% responzivní</span><span class="td"></span> <span>SEO v ceně</span
+            ><span class="td"></span> <span>Hosting v ceně</span><span class="td"></span>
+            <span>Žádné šablony</span><span class="td"></span> <span>Více zákazníků</span
+            ><span class="td"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats">
+      <div class="stats-g">
+        <div class="stat" data-r>
+          <div class="stat-n">
+            <span class="cnt" data-t="14">0</span><span class="stat-sfx">dní</span>
+          </div>
+          <p class="stat-lbl">od konzultace po spuštění</p>
+        </div>
+        <div class="stat" data-r data-d="2">
+          <div class="stat-n">
+            <span class="cnt" data-t="9910">0</span><span class="stat-sfx">Kč</span>
+          </div>
+          <p class="stat-lbl">cena za kompletní web</p>
+        </div>
+        <div class="stat" data-r data-d="4">
+          <div class="stat-n">
+            <span class="cnt" data-t="100">0</span><span class="stat-sfx">%</span>
+          </div>
+          <p class="stat-lbl">responzivní na každém zařízení</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- USP -->
+    <section id="usp" class="sec">
+      <div class="wrap">
+        <div class="sec-hd" data-r>
+          <span class="lbl">Proč my.</span>
+          <h2>V čem jsme jiní?</h2>
+          <p>Navrhujeme weby, které fungují v praxi — ne jen hezky vypadají na mockupu.</p>
+        </div>
+        <div class="usp-g">
+          <article class="usp-c" data-r data-d="1">
+            <div class="usp-ico">
+              <svg viewBox="0 0 24 24">
+                <polyline points="9 11 12 14 22 4" />
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+              </svg>
+            </div>
+            <h3>Víte, kde stojíte každý den.</h3>
+            <p>
+              Žádné "ještě trochu pracujeme". Sdílíme přístup k projektu od první konzultace —
+              vidíte každý krok v reálném čase.
+            </p>
+          </article>
+          <article class="usp-c" data-r data-d="2">
+            <div class="usp-ico">
+              <svg viewBox="0 0 24 24">
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+            </div>
+            <h3>Zákazník přijde z mobilu. Odejde s vaším číslem.</h3>
+            <p>
+              Přes 60 % zákazníků přijde z telefonu. Navrhujeme mobile-first — rychlý, přehledný,
+              bez tření od prvního scrollu.
+            </p>
+          </article>
+          <article class="usp-c" data-r data-d="3">
+            <div class="usp-ico">
+              <svg viewBox="0 0 24 24">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Jeden kontakt. Celý projekt.</h3>
+            <p>
+              Žádný ticketing, žádná fronta. Jeden člověk zodpovídá za celý web — od návrhu až po
+              předání přístupů.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section
+      id="problem"
+      class="sec"
+      style="
+        background: var(--bg-1);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+      "
+    >
+      <div class="wrap">
+        <div class="two">
+          <div class="stk" data-r>
+            <span class="lbl">Co vás brzdí</span>
+            <h2>Tohle vás stojí zákazníky.</h2>
+            <p class="sec-note">Špatný web není estetický problém. Je to ztráta peněz každý den.</p>
+          </div>
+          <div class="acc-list">
+            <div class="acc open" data-r data-d="1">
+              <button class="acc-h" aria-expanded="true" aria-controls="acc-b1">
+                <span class="acc-n">01</span>
+                <span class="acc-t">Ztráta důvěry na první pohled</span>
+                <svg class="acc-ico" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+              <div class="acc-b" id="acc-b1">
+                <p class="acc-bi">
+                  Návštěvník si udělá názor za 3 sekundy. Zastaralý design = nedůvěryhodný byznys.
+                  Ani sebevětší sleva to nezachrání.
+                </p>
+              </div>
+            </div>
+            <div class="acc" data-r data-d="2">
+              <button class="acc-h" aria-expanded="false" aria-controls="acc-b2">
+                <span class="acc-n">02</span>
+                <span class="acc-t">Web, který nevidíte na mobilu</span>
+                <svg class="acc-ico" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+              <div class="acc-b" id="acc-b2">
+                <p class="acc-bi">
+                  Přes 60 % zákazníků přichází z telefonu. Pokud web nefunguje na mobilu, jednoduše
+                  odcházejí ke konkurenci, která funguje.
+                </p>
+              </div>
+            </div>
+            <div class="acc" data-r data-d="3">
+              <button class="acc-h" aria-expanded="false" aria-controls="acc-b3">
+                <span class="acc-n">03</span>
+                <span class="acc-t">Čekání měsíce na výsledek</span>
+                <svg class="acc-ico" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+              <div class="acc-b" id="acc-b3">
+                <p class="acc-bi">
+                  Tradiční agentury berou 2–4 měsíce. Každý den bez webu jsou ztracené příležitosti.
+                  My dodáváme za 14 dní — bez zkratek. První interaktivní návrh navíc uvidíte
+                  zdarma.
+                </p>
+              </div>
+            </div>
+            <div class="acc" data-r data-d="4">
+              <button class="acc-h" aria-expanded="false" aria-controls="acc-b4">
+                <span class="acc-n">04</span>
+                <span class="acc-t">Nejasná cena, surprise invoice</span>
+                <svg class="acc-ico" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 5v14M5 12h14" />
+                </svg>
+              </button>
+              <div class="acc-b" id="acc-b4">
+                <p class="acc-bi">
+                  Nezveřejněná cena vytváří nedůvěru. Zákazník raději odejde jinam, než aby musel
+                  poptávat. U nás víte přesnou cenu ještě před schůzkou.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section
+      id="portfolio"
+      class="sec"
+      style="background: var(--bg); border-bottom: 1px solid var(--border)"
+    >
+      <div class="wrap">
+        <div class="port-hd" data-r>
+          <div>
+            <span class="lbl">Naše práce</span>
+            <h2>Portfolio.</h2>
+          </div>
+          <a href="#contact" class="btn btn-gh">Chci podobný web →</a>
+        </div>
+        <div class="port-g">
+          <article class="port-item" data-r>
+            <div class="bf">
+              <div class="bf-bar">
+                <div class="bf-dots"><span></span><span></span><span></span></div>
+                <div class="bf-url">morivo.cz</div>
+                <div class="bf-sp"></div>
+              </div>
+              <div class="bf-shot">
+                <img
+                  src="./assets/morivo.webp"
+                  alt="Web morivo — marketingová agentura"
+                  width="1280"
+                  height="800"
+                  loading="lazy"
+                />
+                <div class="bf-ov">
+                  <span class="bf-tag">Agentura · 2026</span>
+                  <span class="bf-name">morivo</span>
+                  <p class="bf-desc">
+                    Marketingová agentura potřebovala web, který bude sám o sobě ukázkou jejich
+                    práce. Výrazná vizuální identita, přehledná prezentace služeb a portfolia i
+                    snadná cesta k nezávazné poptávce.
+                  </p>
+                  <a href="https://www.morivo.cz" target="_blank" rel="noopener" class="bf-link"
+                    >Navštívit web →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="port-caption">
+              <span class="bf-tag">Agentura · 2026 — morivo</span>
+              <p>
+                Marketingová agentura potřebovala web, který bude sám o sobě ukázkou jejich práce.
+                Výrazná vizuální identita, přehledná prezentace služeb a portfolia i snadná cesta k
+                nezávazné poptávce.
+              </p>
+              <a href="https://www.morivo.cz" target="_blank" rel="noopener" class="bf-link"
+                >Navštívit web →</a
+              >
+            </div>
+          </article>
+
+          <article class="port-item" data-r data-d="1">
+            <div class="bf">
+              <div class="bf-bar">
+                <div class="bf-dots"><span></span><span></span><span></span></div>
+                <div class="bf-url">fibichovakaterina.cz</div>
+                <div class="bf-sp"></div>
+              </div>
+              <div class="bf-shot">
+                <img
+                  src="./assets/fibichovakaterina.webp"
+                  alt="Web Terapie Kateřina — psychoterapie a poradenství"
+                  width="1280"
+                  height="800"
+                  loading="lazy"
+                />
+                <div class="bf-ov">
+                  <span class="bf-tag">Psychoterapie · 2026</span>
+                  <span class="bf-name">Kateřina Fibichová</span>
+                  <p class="bf-desc">
+                    Osobní web postavený na důvěře a klidu. Jemný vizuál, jasné představení služeb a
+                    objednání první konzultace bez bariér.
+                  </p>
+                  <a
+                    href="https://fibichovakaterina.cz"
+                    target="_blank"
+                    rel="noopener"
+                    class="bf-link"
+                    >Navštívit web →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="port-caption">
+              <span class="bf-tag">Psychoterapie · 2026 — Kateřina Fibichová</span>
+              <p>
+                Osobní web postavený na důvěře a klidu. Jemný vizuál, jasné představení služeb a
+                objednání první konzultace bez bariér.
+              </p>
+              <a href="https://fibichovakaterina.cz" target="_blank" rel="noopener" class="bf-link"
+                >Navštívit web →</a
+              >
+            </div>
+          </article>
+
+          <article class="port-item" data-r data-d="2">
+            <div class="bf">
+              <div class="bf-bar">
+                <div class="bf-dots"><span></span><span></span><span></span></div>
+                <div class="bf-url">villagardena.com</div>
+                <div class="bf-sp"></div>
+              </div>
+              <div class="bf-shot">
+                <img
+                  src="./assets/villagardena.webp"
+                  alt="Web Villa Gardena — apartmány v Českém Krumlově"
+                  width="1280"
+                  height="800"
+                  loading="lazy"
+                />
+                <div class="bf-ov">
+                  <span class="bf-tag">Apartmány · 2026</span>
+                  <span class="bf-name">Villa Gardena</span>
+                  <p class="bf-desc">
+                    Apartmány v Českém Krumlově s výhledem na zámek. Prezentace pokojů, ceník i
+                    kontakt pro rezervace — přehledně a vícejazyčně.
+                  </p>
+                  <a href="https://villagardena.com" target="_blank" rel="noopener" class="bf-link"
+                    >Navštívit web →</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="port-caption">
+              <span class="bf-tag">Apartmány · 2026 — Villa Gardena</span>
+              <p>
+                Apartmány v Českém Krumlově s výhledem na zámek. Prezentace pokojů, ceník i kontakt
+                pro rezervace — přehledně a vícejazyčně.
+              </p>
+              <a href="https://villagardena.com" target="_blank" rel="noopener" class="bf-link"
+                >Navštívit web →</a
+              >
+            </div>
+          </article>
+
+          <article class="port-item" data-r data-d="3">
+            <a href="#contact" class="bf bf-cta">
+              <div class="bf-bar">
+                <div class="bf-dots"><span></span><span></span><span></span></div>
+                <div class="bf-url">vase-domena.cz</div>
+                <div class="bf-sp"></div>
+              </div>
+              <div class="bf-cta-body">
+                <span class="bf-tag">Volné místo v portfoliu</span>
+                <span class="bf-name">Tento projekt může být váš</span>
+                <span class="bf-cta-arr">→</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section
+      id="process"
+      class="sec"
+      style="background: var(--bg-1); border-bottom: 1px solid var(--border)"
+    >
+      <div class="wrap">
+        <div class="proc-layout">
+          <div class="proc-left" data-r>
+            <span class="lbl">Jak to funguje</span>
+            <h2>Web hotový za 14 dní.</h2>
+            <p>Jasný postup bez zbytečných zpátečních kroků. Od prvního kontaktu po spuštění.</p>
+            <div class="proc-badge">
+              <span class="proc-badge-n">14</span>
+              <span class="proc-badge-lbl">dní realizace</span>
+            </div>
+          </div>
+          <div id="proc-steps" class="proc-steps">
+            <div class="proc-step" data-r data-d="1">
+              <div class="proc-num">1</div>
+              <div class="proc-cnt">
+                <h3>Kontakt</h3>
+                <p>Jediný krok, který musíte udělat Vy. Napíšete nám — o zbytek se staráme.</p>
+              </div>
+            </div>
+            <div class="proc-step" data-r data-d="2">
+              <div class="proc-num">2</div>
+              <div class="proc-cnt">
+                <h3>Konzultace</h3>
+                <p>Sladíme cíle, rozsah a styl. Bez formulářů, bez čekání — rovnou k věci.</p>
+              </div>
+            </div>
+            <div class="proc-step" data-r data-d="3">
+              <div class="proc-num">3</div>
+              <div class="proc-cnt">
+                <h3>Návrh</h3>
+                <p>
+                  První interaktivní návrh připravíme zdarma a bez závazků. Zapracujeme váš
+                  feedback, dokud to nebude přesně tak, jak chcete.
+                </p>
+              </div>
+            </div>
+            <div class="proc-step" data-r data-d="4">
+              <div class="proc-num">4</div>
+              <div class="proc-cnt">
+                <h3>Vývoj</h3>
+                <p>Kódujeme, testujeme na všech zařízeních, dolaďujeme každý detail.</p>
+              </div>
+            </div>
+            <div class="proc-step" data-r data-d="5">
+              <div class="proc-num">5</div>
+              <div class="proc-cnt">
+                <h3>Předání</h3>
+                <p>Spustíme, zaškolíme, předáme všechny přístupy. Váš web je živý.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <!-- TODO PRO KLIENTA: zadání uvádí slevu „z původní částky 1490,-" — interpretováno jako překlep
+     za 14 900 Kč (9 900 / 14 900 = sleva −34 %). Pokud měla být původní cena jiná,
+     přepočítej procento: round((1 − 9900/původní) × 100). -->
+    <section
+      id="pricing"
+      class="sec"
+      style="background: var(--bg); border-bottom: 1px solid var(--border)"
+    >
+      <div class="wrap">
+        <div class="sec-hd" data-r>
+          <span class="lbl">Transparentní ceny</span>
+          <h2>Kolik to stojí?</h2>
+          <p>Žádné skryté poplatky. Cenu znáte předem.</p>
+        </div>
+        <div class="price-g">
+          <div class="price-c" data-r data-d="1">
+            <div class="price-badge price-badge--gh">Akční cena — −34 %</div>
+            <div class="price-name">Jednostránkový web</div>
+            <div class="price-desc">
+              Profesionální web na míru — vše podstatné na jedné přehledné stránce. Od návrhu po
+              spuštění za 14 dní.
+            </div>
+            <div class="price-row">
+              <span class="price-big">9 900</span>
+              <span class="price-cur">Kč</span>
+            </div>
+            <div class="price-was">běžně 14 900 Kč</div>
+            <div class="price-feats">
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Design na míru
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Responzivní na všech zařízeních
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Základní SEO optimalizace
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Kontaktní formulář
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Hotovo za 14 dní
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-out">Chci tento web</a>
+          </div>
+
+          <div class="price-c price-c--main" data-r data-d="2">
+            <div class="price-badge">Nejvýhodnější start</div>
+            <div class="price-name">Tvorba webu + správa</div>
+            <div class="price-desc">
+              Nižší vstupní cena a web, o který se dál staráme my. Vy podnikáte, my hlídáme provoz.
+            </div>
+            <div class="price-row">
+              <span class="price-big">4 990</span>
+              <span class="price-cur">Kč</span>
+            </div>
+            <div class="price-plus">+ 490 Kč / měs za správu</div>
+            <div class="price-feats">
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Vše z jednostránkového webu
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Hosting v ceně
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Pravidelné aktualizace
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Technická podpora
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Zálohování dat
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Drobné úpravy obsahu
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-y">Chci tento web</a>
+          </div>
+
+          <div class="price-c" data-r data-d="3">
+            <div class="price-sp"></div>
+            <div class="price-name">Rozsáhlejší projekty</div>
+            <div class="price-desc">
+              Vícestránkový web, e-shop nebo funkce na míru? Připravíme individuální nabídku přesně
+              podle vašeho zadání.
+            </div>
+            <div class="price-row">
+              <span class="price-big">Na míru</span>
+            </div>
+            <div class="price-plus">nezávazné nacenění zdarma do 48 hodin</div>
+            <div class="price-feats">
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Vícestránkové weby a e-shopy
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Rezervační a objednávkové systémy
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Napojení na nástroje, které používáte
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Rozsah i termín podle zadání
+              </div>
+              <div class="price-feat">
+                <div class="price-chk">✓</div>
+                Cena odsouhlasená předem
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-out">Nezávazně poptat</a>
+          </div>
+        </div>
+
+        <p class="price-note" data-r>
+          Nezávazný <span class="y">interaktivní návrh připravíme zdarma</span> — napište nám nebo
+          zavolejte.
+        </p>
+        <p class="price-terms" data-r>
+          Platba: 50 % zálohou před zahájením projektu, 50 % po dokončení a předání. Individuální
+          požadavky nad rámec balíčku naceníme předem hodinovou sazbou 490 Kč/h.
+        </p>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section
+      id="reviews"
+      class="sec"
+      style="background: var(--bg-2); border-bottom: 1px solid var(--border)"
+    >
+      <div class="wrap">
+        <div class="sec-hd" data-r>
+          <span class="lbl">Co říkají klienti</span>
+          <h2>Recenze.</h2>
+        </div>
+
+        <div class="car" data-r data-d="1">
+          <div class="car-vp" id="car-vp" role="region" aria-label="Recenze klientů" tabindex="0">
+            <article class="rev-c">
+              <div class="rev-stars" aria-label="5 z 5 hvězdiček">
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <blockquote class="rev-text">
+                "Skvělá práce a maximální spokojenost! Chci moc poděkovat klukům za nový web pro náš
+                penzion. Nejvíce cením jejich flexibilitu a všestrannost – bez problémů integrovali
+                náš rezervační systém a hladce web napojili i na naše druhé webovky. Vše proběhlo
+                rychle, s detailním zpracováním a za velmi přívětivou cenu. Komunikace byla po celou
+                dobu skvělá, pomohlo mi i připomínání mých úkolů a důležitých termínů. Určitě
+                doporučuji všemi deseti!"
+              </blockquote>
+              <div class="rev-author">
+                <div class="rev-avatar" aria-hidden="true">M</div>
+                <div>
+                  <div class="rev-name">Marie</div>
+                  <div class="rev-role">majitelka penzionu</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="rev-c">
+              <div class="rev-stars" aria-label="5 z 5 hvězdiček">
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                <svg viewBox="0 0 24 24">
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <blockquote class="rev-text">
+                "Pro terapii je důvěra úplný základ, a přesně to jsem potřebovala, aby web vyzařoval
+                už od prvního kliknutí. Kluci si dali záležet, aby vizuál i texty působily klidně a
+                lidsky, ne jako z šablony. Objednání na první konzultaci teď zvládnou klienti za pár
+                vteřin, bez zbytečných kroků navíc. Komunikace během spolupráce byla vždy rychlá a
+                vstřícná a výsledek přesně odpovídá tomu, jak chci, aby mě lidé vnímali. Moc děkuji
+                a ráda doporučím dál."
+              </blockquote>
+              <div class="rev-author">
+                <div class="rev-avatar" aria-hidden="true">K</div>
+                <div>
+                  <div class="rev-name">Kateřina</div>
+                  <div class="rev-role">terapeutka</div>
+                </div>
+              </div>
+            </article>
+
+            <a href="#contact" class="rev-c rev-cta">
+              <div class="rev-name">Těšíme se i na vaši recenzi</div>
+              <div class="rev-role">Napište nám, jak se vám s námi pracovalo</div>
+              <div class="bf-cta-arr">→</div>
+            </a>
+          </div>
+
+          <div class="car-ctrl">
+            <div class="car-arrows">
+              <button class="car-btn" id="car-prev" aria-label="Předchozí recenze">
+                <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6" /></svg>
+              </button>
+              <button class="car-btn" id="car-next" aria-label="Další recenze">
+                <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6" /></svg>
+              </button>
+            </div>
+            <div class="car-dots" id="car-dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec" style="background: var(--bg-1)">
+      <div class="wrap">
+        <div class="sec-hd" data-r style="text-align: center">
+          <span class="lbl" style="display: block; text-align: center">Nejčastější dotazy</span>
+          <h2>FAQ.</h2>
+        </div>
+        <div class="faq-list" data-r data-d="1">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a1">
+              <h3>Jak dlouho trvá realizace?</h3>
+              <div class="faq-plus" aria-hidden="true">+</div>
+            </button>
+            <div class="faq-a" id="faq-a1" aria-hidden="true">
+              <div class="faq-a-in">
+                Standardně 14 dní od první konzultace po spuštění. U rozsáhlejších projektů se
+                termín domluvíme individuálně.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a2">
+              <h3>Co potřebuji pro zahájení?</h3>
+              <div class="faq-plus" aria-hidden="true">+</div>
+            </button>
+            <div class="faq-a" id="faq-a2" aria-hidden="true">
+              <div class="faq-a-in">
+                Stačí nás kontaktovat. Na první schůzce si ujasníme vše potřebné — obsah, design,
+                funkce. Vše ostatní vyřídíme za vás.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a3">
+              <h3>Co znamená návrh zdarma?</h3>
+              <div class="faq-plus" aria-hidden="true">+</div>
+            </button>
+            <div class="faq-a" id="faq-a3" aria-hidden="true">
+              <div class="faq-a-in">
+                Před objednávkou připravíme nezávazný interaktivní návrh vašeho webu. Stačí nám
+                napsat přes formulář nebo zavolat — uvidíte, jak bude web vypadat, ještě než se
+                rozhodnete.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a4">
+              <h3>Jak probíhá platba?</h3>
+              <div class="faq-plus" aria-hidden="true">+</div>
+            </button>
+            <div class="faq-a" id="faq-a4" aria-hidden="true">
+              <div class="faq-a-in">
+                50 % zálohou před zahájením, 50 % po dokončení a předání webu. Požadavky nad rámec
+                balíčku naceníme předem sazbou 490 Kč/h.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a5">
+              <h3>Mohu web po předání upravovat sám?</h3>
+              <div class="faq-plus" aria-hidden="true">+</div>
+            </button>
+            <div class="faq-a" id="faq-a5" aria-hidden="true">
+              <div class="faq-a-in">
+                Ano. Při předání vás zaškolíme a ukážeme, jak provést základní úpravy. Pro
+                složitější změny jsme tu vždy k dispozici.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a6">
+              <h3>Je v ceně i hosting?</h3>
+              <div class="faq-plus" aria-hidden="true">+</div>
+            </button>
+            <div class="faq-a" id="faq-a6" aria-hidden="true">
+              <div class="faq-a-in">
+                Hosting je součástí měsíční správy za 490 Kč/měs. Jednorázová cena pokrývá vývoj a
+                design — provoz zajistíme v rámci správy.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a7">
+              <h3>Co když nebudu s webem spokojený?</h3>
+              <div class="faq-plus" aria-hidden="true">+</div>
+            </button>
+            <div class="faq-a" id="faq-a7" aria-hidden="true">
+              <div class="faq-a-in">
+                Pracujeme iterativně — zapracujeme váš feedback, dokud nebude výsledek přesně
+                takový, jak chcete. Váš souhlas je podmínkou předání.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="sec" style="background: var(--bg)">
+      <div class="wrap">
+        <div data-r>
+          <span class="lbl">Pojďme začít</span>
+          <h2>Kontaktujte nás.</h2>
+          <span class="contact-eyebrow"
+            >Interaktivní návrh zdarma — stačí napsat nebo zavolat.</span
+          >
+        </div>
+        <div class="contact-g">
+          <div data-r data-d="1">
+            <form id="cform" novalidate action="send.php" method="POST">
+              <div class="f-row">
+                <div class="f-g">
+                  <label for="f-name">Jméno</label>
+                  <input
+                    type="text"
+                    id="f-name"
+                    name="name"
+                    placeholder="Jan Novák"
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="f-g">
+                  <label for="f-email">Email <span class="req">*</span></label>
+                  <input
+                    type="email"
+                    id="f-email"
+                    name="email"
+                    placeholder="jan.novak@gmail.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="f-g">
+                <label for="f-phone"
+                  >Telefon
+                  <span style="color: var(--dim); text-transform: none; letter-spacing: 0"
+                    >(nepovinné)</span
+                  ></label
+                >
+                <input
+                  type="tel"
+                  id="f-phone"
+                  name="phone"
+                  placeholder="+420 777 123 456"
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="f-g">
+                <label for="f-msg">Zpráva <span class="req">*</span></label>
+                <textarea
+                  id="f-msg"
+                  name="message"
+                  placeholder="Popište váš projekt..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <!-- Honeypot — nechte prázdné -->
+              <div class="f-hp" aria-hidden="true">
+                <label for="f-web">Web</label>
+                <input type="text" id="f-web" name="website" tabindex="-1" autocomplete="off" />
+              </div>
+              <button type="submit" class="btn btn-y" style="margin-top: 4px">
+                Odeslat zprávu →
+              </button>
+              <p class="form-gdpr">
+                Odesláním souhlasíte se zpracováním údajů za účelem vyřízení poptávky. Více v
+                <a
+                  href="./ochrana-osobnich-udaju.html"
+                  style="color: var(--muted); text-decoration: underline"
+                  >zásadách ochrany osobních údajů</a
+                >.
+              </p>
+              <div class="form-ok" id="form-ok" role="status">Děkujeme! Ozveme se do 24 hodin.</div>
+              <div class="form-err" id="form-err" role="alert">Vyplňte prosím email a zprávu.</div>
+            </form>
+          </div>
+          <div class="cinfo" data-r data-d="2">
+            <h3>Raději nás kontaktujte přímo</h3>
+            <p>Jsme malý tým — odpovídáme rychle a bez zbytečné byrokracie.</p>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 11 19.79 19.79 0 0 1 1 2.18A2 2 0 0 1 2.96 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </div>
+              <div class="cinfo-val">
+                +420 <span style="display: none">nospam</span>792
+                <span style="display: none">nospam</span>336
+                <span style="display: none">nospam</span>804
+              </div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="cinfo-val"><a href="mailto:info@onji.cz">info@onji.cz</a></div>
+            </div>
+            <div class="cinfo-item">
+              <div class="cinfo-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <line x1="7" y1="9" x2="11" y2="9" />
+                  <line x1="7" y1="13" x2="14" y2="13" />
+                </svg>
+              </div>
+              <div class="cinfo-val">IČO: 21926719</div>
+            </div>
+            <p class="cinfo-reply">Odpovídáme do 24 hodin</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="foot-i">
+        <div class="foot-logo">on<span>ji</span></div>
+        <p class="foot-copy">© <span id="foot-year">2026</span> onji. Všechna práva vyhrazena.</p>
+        <div class="foot-links">
+          <a href="#usp">Proč my</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#pricing">Ceník</a>
+          <a href="#reviews">Recenze</a>
+          <a href="#contact">Kontakt</a>
+          <a href="./ochrana-osobnich-udaju.html">Ochrana údajů</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- STICKY MOBILNÍ CTA -->
+    <div id="mcta">
+      <a href="#contact" class="mcta-link">Návrh zdarma →</a>
+      <button class="mcta-close" id="mcta-close" aria-label="Skrýt lištu">✕</button>
+    </div>
+
+    <button id="stbtn" aria-label="Přejít na začátek">
+      <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15" /></svg>
+    </button>
+
+    <!-- COOKIE LIŠTA -->
+    <div
+      class="cookie-bar"
+      id="cookie-bar"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Souhlas s cookies"
+    >
+      <p class="cookie-txt">
+        Používáme cookies a měřicí skripty (Google Tag Manager), které nám pomáhají vylepšovat web.
+        Bez vašeho souhlasu nic neodesíláme.
+        <a href="./ochrana-osobnich-udaju.html#cookies">Více informací</a>.
+      </p>
+      <div class="cookie-btns">
+        <button type="button" class="btn btn-gh cookie-btn" id="cookie-reject">Odmítnout</button>
+        <button type="button" class="btn btn-y cookie-btn" id="cookie-accept">Přijmout</button>
+      </div>
+    </div>
+
+    <script>
+      const footYear = document.getElementById('foot-year');
+      if (footYear) footYear.textContent = new Date().getFullYear();
+
+      const motionOK = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* ─── HERO PARTICLES — plovoucí žluté tečky ─── */
+      (function () {
+        if (!motionOK) return; // při reduced motion zůstávají statické tečky (CSS)
+        const canvas = document.getElementById('hero-canvas');
+        const hero = document.getElementById('hero');
+        const ctx = canvas.getContext('2d');
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        let W = 0,
+          H = 0,
+          running = false,
+          raf = null;
+        let mx = 0,
+          my = 0; // cílová paralaxa
+        let px = 0,
+          py = 0; // vyhlazená paralaxa
+
+        function resize() {
+          W = hero.clientWidth;
+          H = hero.clientHeight;
+          canvas.width = W * dpr;
+          canvas.height = H * dpr;
+          canvas.style.width = W + 'px';
+          canvas.style.height = H + 'px';
+          ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        const N = 44;
+        const parts = [];
+        for (let i = 0; i < N; i++) {
+          parts.push({
+            x: Math.random(),
+            y: Math.random(),
+            r: 1.3 + Math.random() * 2.1, // poloměr 1.3–3.4 px → průměr 2.6–6.8 px
+            o: 0.35 + Math.random() * 0.55, // opacity .35–.9
+            vx: (Math.random() - 0.5) * 0.00048,
+            vy: (Math.random() - 0.5) * 0.0004,
+            a: Math.random() * Math.PI * 2, // fáze sinusového driftu
+            b: Math.random() * Math.PI * 2,
+            tw: Math.random() * Math.PI * 2, // fáze třpytu (twinkle)
+            s: 0.0006 + Math.random() * 0.0008, // rychlost oscilace
+          });
+        }
+
+        hero.addEventListener('pointermove', (e) => {
+          const r = hero.getBoundingClientRect();
+          mx = ((e.clientX - r.left) / r.width - 0.5) * 44; // max ±22 px
+          my = ((e.clientY - r.top) / r.height - 0.5) * 44;
+        });
+        hero.addEventListener('pointerleave', () => {
+          mx = 0;
+          my = 0;
+        });
+
+        function tick(t) {
+          if (!running) return;
+          px += (mx - px) * 0.04;
+          py += (my - py) * 0.04;
+          ctx.clearRect(0, 0, W, H);
+
+          const pos = parts.map((p) => {
+            p.x = (p.x + p.vx + 1) % 1;
+            p.y = (p.y + p.vy + 1) % 1;
+            return {
+              x: p.x * W + Math.sin(t * p.s + p.a) * 28 + px,
+              y: p.y * H + Math.cos(t * p.s * 0.8 + p.b) * 24 + py,
+              r: p.r,
+              o: p.o * (0.65 + 0.35 * Math.sin(t * 0.0016 + p.tw)), // třpyt — pomalé pulzování jasu
+            };
+          });
+
+          // propojovací linky < 160 px — jas podle vzdálenosti
+          const LINK = 160,
+            LINK2 = LINK * LINK;
+          ctx.lineWidth = 1;
+          for (let i = 0; i < pos.length; i++) {
+            for (let j = i + 1; j < pos.length; j++) {
+              const dx = pos[i].x - pos[j].x,
+                dy = pos[i].y - pos[j].y;
+              const d2 = dx * dx + dy * dy;
+              if (d2 < LINK2) {
+                ctx.strokeStyle = 'rgba(245,230,66,' + (0.22 * (1 - d2 / LINK2)).toFixed(3) + ')';
+                ctx.beginPath();
+                ctx.moveTo(pos[i].x, pos[i].y);
+                ctx.lineTo(pos[j].x, pos[j].y);
+                ctx.stroke();
+              }
+            }
+          }
+
+          ctx.fillStyle = '#F5E642';
+          ctx.shadowColor = 'rgba(245,230,66,.85)';
+          ctx.shadowBlur = 9;
+          for (const p of pos) {
+            ctx.globalAlpha = Math.max(p.o, 0.12);
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fill();
+          }
+          ctx.shadowBlur = 0;
+          ctx.globalAlpha = 1;
+          raf = requestAnimationFrame(tick);
+        }
+
+        // pauza mimo viewport
+        new IntersectionObserver(
+          (es) => {
+            const vis = es[0].isIntersecting;
+            if (vis && !running) {
+              running = true;
+              raf = requestAnimationFrame(tick);
+            } else if (!vis && running) {
+              running = false;
+              cancelAnimationFrame(raf);
+            }
+          },
+          { threshold: 0 },
+        ).observe(hero);
+      })();
+
+      /* ─── REVEAL ─── */
+      const ro = new IntersectionObserver(
+        (es) => {
+          es.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add('on');
+              ro.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll('[data-r]').forEach((el) => ro.observe(el));
+
+      /* ─── COUNT-UP ─── */
+      function countUp(el, target, dur) {
+        if (!motionOK) {
+          el.textContent = target.toLocaleString('cs-CZ');
+          return;
+        }
+        const t0 = performance.now();
+        (function go(ts) {
+          const p = Math.min((ts - t0) / dur, 1);
+          const v = Math.round((1 - Math.pow(2, -10 * p)) * target);
+          el.textContent = v.toLocaleString('cs-CZ');
+          if (p < 1) requestAnimationFrame(go);
+        })(performance.now());
+      }
+      let statsDone = false;
+      new IntersectionObserver(
+        (es) => {
+          if (es[0].isIntersecting && !statsDone) {
+            statsDone = true;
+            document.querySelectorAll('.cnt').forEach((el) => countUp(el, +el.dataset.t, 1600));
+          }
+        },
+        { threshold: 0.4 },
+      ).observe(document.getElementById('stats'));
+
+      /* ─── PROCESS STEP HIGHLIGHT ─── */
+      const procObs = new IntersectionObserver(
+        (es) => {
+          es.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add('lit');
+          });
+        },
+        { threshold: 0.55 },
+      );
+      document.querySelectorAll('.proc-step').forEach((s) => procObs.observe(s));
+
+      /* ─── ACCORDIONS — problémy ─── */
+      document.querySelectorAll('.acc-h').forEach((h) => {
+        h.addEventListener('click', () => {
+          const item = h.closest('.acc');
+          const was = item.classList.contains('open');
+          document.querySelectorAll('.acc.open').forEach((o) => {
+            o.classList.remove('open');
+            o.querySelector('.acc-h').setAttribute('aria-expanded', 'false');
+          });
+          if (!was) {
+            item.classList.add('open');
+            h.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      /* ─── ACCORDIONS — FAQ ─── */
+      document.querySelectorAll('.faq-q').forEach((q) => {
+        q.addEventListener('click', () => {
+          const item = q.closest('.faq-item');
+          const was = item.classList.contains('open');
+          document.querySelectorAll('.faq-item.open').forEach((o) => {
+            o.classList.remove('open');
+            o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+            o.querySelector('.faq-a').setAttribute('aria-hidden', 'true');
+          });
+          if (!was) {
+            item.classList.add('open');
+            q.setAttribute('aria-expanded', 'true');
+            item.querySelector('.faq-a').setAttribute('aria-hidden', 'false');
+          }
+        });
+      });
+
+      /* ─── NAV SCROLL ─── */
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => nav.classList.toggle('on', scrollY > 40), {
+        passive: true,
+      });
+
+      /* ─── MOBILE MENU — focus trap + Esc ─── */
+      const mm = document.getElementById('mmenu');
+      const burger = document.getElementById('nav-burger');
+      function openMM() {
+        mm.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        burger.setAttribute('aria-expanded', 'true');
+        mm.querySelector('a').focus();
+      }
+      function closeMM() {
+        mm.classList.remove('open');
+        document.body.style.overflow = '';
+        burger.setAttribute('aria-expanded', 'false');
+        burger.focus();
+      }
+      burger.addEventListener('click', openMM);
+      document.getElementById('mm-close').addEventListener('click', closeMM);
+      document.querySelectorAll('#mmenu a').forEach((a) => a.addEventListener('click', closeMM));
+      mm.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeMM();
+          return;
+        }
+        if (e.key !== 'Tab') return;
+        const f = mm.querySelectorAll('button, a');
+        const first = f[0],
+          last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      });
+
+      /* ─── RECENZE — CAROUSEL ─── */
+      (function () {
+        const vp = document.getElementById('car-vp');
+        const cards = vp.querySelectorAll('.rev-c');
+        const dotsBox = document.getElementById('car-dots');
+        const prev = document.getElementById('car-prev');
+        const next = document.getElementById('car-next');
+        let paused = false,
+          timer = null;
+
+        cards.forEach((c, i) => {
+          const d = document.createElement('button');
+          d.className = 'car-dot';
+          d.setAttribute('aria-label', 'Recenze ' + (i + 1));
+          d.addEventListener('click', () => go(i));
+          dotsBox.appendChild(d);
+        });
+        const dots = dotsBox.querySelectorAll('.car-dot');
+
+        function cardW() {
+          return cards[0].offsetWidth + 20;
+        }
+        function maxLeft() {
+          return vp.scrollWidth - vp.clientWidth;
+        }
+        function idx() {
+          return Math.min(Math.round(vp.scrollLeft / cardW()), cards.length - 1);
+        }
+        function go(i) {
+          const left = Math.min(i * cardW(), maxLeft());
+          vp.scrollTo({ left, behavior: motionOK ? 'smooth' : 'auto' });
+        }
+        function paint() {
+          const i = vp.scrollLeft >= maxLeft() - 4 ? cards.length - 1 : idx();
+          dots.forEach((d, k) => d.classList.toggle('on', k === i));
+        }
+        paint();
+
+        let sRaf = null;
+        vp.addEventListener(
+          'scroll',
+          () => {
+            if (sRaf) return;
+            sRaf = requestAnimationFrame(() => {
+              paint();
+              sRaf = null;
+            });
+          },
+          { passive: true },
+        );
+
+        prev.addEventListener('click', () => go(Math.max(idx() - 1, 0)));
+        next.addEventListener('click', () => go(Math.min(idx() + 1, cards.length - 1)));
+
+        // auto-advance po 6 s — ne při reduced motion
+        function advance() {
+          if (paused) return;
+          const atEnd = vp.scrollLeft >= maxLeft() - 4;
+          go(atEnd ? 0 : idx() + 1);
+        }
+        if (motionOK) timer = setInterval(advance, 6000);
+
+        const car = vp.closest('.car');
+        ['pointerenter', 'focusin', 'touchstart'].forEach((ev) =>
+          car.addEventListener(
+            ev,
+            () => {
+              paused = true;
+            },
+            { passive: true },
+          ),
+        );
+        ['pointerleave', 'focusout'].forEach((ev) =>
+          car.addEventListener(ev, () => {
+            paused = false;
+          }),
+        );
+      })();
+
+      /* ─── SCROLL TOP ─── */
+      const stb = document.getElementById('stbtn');
+      window.addEventListener('scroll', () => stb.classList.toggle('vis', scrollY > 400), {
+        passive: true,
+      });
+      stb.addEventListener('click', () =>
+        window.scrollTo({ top: 0, behavior: motionOK ? 'smooth' : 'auto' }),
+      );
+
+      /* ─── STICKY MOBILNÍ CTA ─── */
+      (function () {
+        const bar = document.getElementById('mcta');
+        const hero = document.getElementById('hero');
+        let dismissed = false;
+        document.getElementById('mcta-close').addEventListener('click', () => {
+          dismissed = true;
+          bar.classList.remove('vis');
+        });
+        window.addEventListener(
+          'scroll',
+          () => {
+            if (dismissed) return;
+            bar.classList.toggle('vis', hero.getBoundingClientRect().bottom < 0);
+          },
+          { passive: true },
+        );
+      })();
+
+      /* ─── COOKIE SOUHLAS ─── */
+      (function () {
+        const KEY = 'wn_cookie_consent';
+        const html = document.documentElement;
+        const bar = document.getElementById('cookie-bar');
+
+        function loadAnalytics() {
+          // Google Tag Manager
+          (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-WW4QXFBC');
+        }
+
+        function hide() {
+          bar.classList.remove('vis');
+          html.classList.remove('cookie-pending', 'cookie-vis');
+        }
+
+        const consent = localStorage.getItem(KEY);
+        if (consent === 'accepted') {
+          loadAnalytics();
+        } else if (consent !== 'rejected') {
+          html.classList.add('cookie-pending', 'cookie-vis');
+          requestAnimationFrame(() => bar.classList.add('vis'));
+        }
+
+        document.getElementById('cookie-accept').addEventListener('click', () => {
+          localStorage.setItem(KEY, 'accepted');
+          hide();
+          loadAnalytics();
+        });
+        document.getElementById('cookie-reject').addEventListener('click', () => {
+          localStorage.setItem(KEY, 'rejected');
+          hide();
+        });
+      })();
+
+      /* ─── SMOOTH SCROLL ─── */
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener('click', (e) => {
+          const id = a.getAttribute('href').slice(1);
+          const t = id && document.getElementById(id);
+          if (t) {
+            e.preventDefault();
+            window.scrollTo({
+              top: t.getBoundingClientRect().top + scrollY - nav.offsetHeight - 12,
+              behavior: motionOK ? 'smooth' : 'auto',
+            });
+          }
+        });
+      });
+
+      /* ─── FORM ─── */
+      const formOk = document.getElementById('form-ok');
+      const formErr = document.getElementById('form-err');
+      document.getElementById('cform').addEventListener('submit', (e) => {
+        const email = document.getElementById('f-email').value.trim();
+        const msg = document.getElementById('f-msg').value.trim();
+        const hp = document.getElementById('f-web').value.trim();
+        if (hp) {
+          e.preventDefault();
+          return;
+        } // honeypot — tichý blok
+        if (!email || !msg) {
+          e.preventDefault();
+          formErr.classList.add('vis');
+          formOk.classList.remove('vis');
+        } else {
+          formErr.classList.remove('vis');
+        }
+      });
+      const qs = new URLSearchParams(location.search);
+      if (qs.get('sent') === '1') formOk.classList.add('vis');
+      if (qs.get('error') === '1') {
+        formErr.textContent =
+          'Odeslání se nepovedlo. Zkuste to prosím znovu, nebo nám napište na info@onji.cz.';
+        formErr.classList.add('vis');
+      }
+    </script>
+  </body>
+</html>
