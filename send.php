@@ -6,10 +6,11 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-function loadEnv(string $path): void
+function loadEnv(string $path): array
 {
+    $env = [];
     if (!is_readable($path)) {
-        return;
+        return $env;
     }
     foreach (file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
         $line = trim($line);
@@ -17,15 +18,12 @@ function loadEnv(string $path): void
             continue;
         }
         [$key, $value] = explode('=', $line, 2);
-        $key   = trim($key);
-        $value = trim($value, " \t\n\r\0\x0B\"'");
-        if (getenv($key) === false) {
-            putenv("$key=$value");
-        }
+        $env[trim($key)] = trim($value, " \t\n\r\0\x0B\"'");
     }
+    return $env;
 }
 
-loadEnv(__DIR__ . '/.env');
+$env = loadEnv(__DIR__ . '/.env');
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name    = htmlspecialchars(trim($_POST["name"] ?? ""));
@@ -41,26 +39,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     try {
         $mail->isSMTP();
-        $mail->Host       = getenv('SMTP_HOST');
+        $mail->Host       = $env['SMTP_HOST'] ?? '';
         $mail->SMTPAuth   = true;
-        $mail->Username   = getenv('SMTP_USERNAME');
-        $mail->Password   = getenv('SMTP_PASSWORD');
+        $mail->Username   = $env['SMTP_USERNAME'] ?? '';
+        $mail->Password   = $env['SMTP_PASSWORD'] ?? '';
         $mail->SMTPSecure = 'tls';
-        $mail->Port       = (int) getenv('SMTP_PORT');
+        $mail->Port       = (int) ($env['SMTP_PORT'] ?? 587);
         $mail->CharSet    = 'UTF-8';
 
-        $mail->setFrom(getenv('SMTP_USERNAME'), 'Web kontaktní formulář');
-        $mail->addAddress(getenv('MAIL_TO'));
+        $mail->setFrom($env['SMTP_USERNAME'] ?? '', 'Web kontaktní formulář');
+        $mail->addAddress($env['MAIL_TO'] ?? '');
         $mail->addReplyTo($email, $name);
 
         $mail->Subject = 'Zpráva z webu' . ($name ? " od $name" : '');
         $mail->Body    = "Jméno: $name\nEmail: $email\n\nZpráva:\n$message";
 
         $mail->send();
-        header('Location: index.html?sent=1');
+        http_response_code(200);
+        echo 'OK';
     } catch (Exception $e) {
         error_log($mail->ErrorInfo);
-        header('Location: index.html?error=1');
+        http_response_code(500);
+        echo 'Odeslání se nezdařilo.';
     }
     exit;
 }
